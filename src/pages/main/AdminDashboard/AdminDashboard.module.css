@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+.bgCnt {
+  background-color: #e5e5e5;
+}
+
+.bgDiv {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dropDown {
+  width: 300px;
+  background-color: honeydew !important;
+}
+
+.btn {
+  background-color: rgba(95, 46, 234, 1);
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.75px;
+}
+
+.title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+}
+
+.noData {
+  font-family: "Mulish", sans-serif;
+}

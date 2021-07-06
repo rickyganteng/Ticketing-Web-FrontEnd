@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+.semi {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #6e7191;
+}
+
+.bold {
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
