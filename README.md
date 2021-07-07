@@ -1,4 +1,4 @@
-<h1 align='center'>React JS - Tiketing-Web-FrontEnd</h1>
+<h1 align='center'>React JS - Ticketing-Web-FrontEnd</h1>
   <p align="center">
     <a href="link_deploy">View Demo</a>
     ·
