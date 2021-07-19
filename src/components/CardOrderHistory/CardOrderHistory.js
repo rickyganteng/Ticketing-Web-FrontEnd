@@ -5,6 +5,7 @@ import styles from "./CardOrderHistory.module.css";
 
 class Cards extends Component {
   render() {
+    console.log(this.props);
     const {
       movie_name,
       premiere_logo,

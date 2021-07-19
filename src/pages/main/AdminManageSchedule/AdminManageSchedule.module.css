@@ -28,13 +28,16 @@
   line-height: 30px;
   letter-spacing: 0.25px;
 }
-
+.textleft {
+  text-align: left;
+}
 .semi {
   font-family: "Mulish", sans-serif;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.25px;
   color: #6b6b6b;
+  text-align: center;
 }
 
 .btReset {
@@ -52,10 +55,7 @@
 }
 
 .dropDown {
-  display: inline;
-  width: 100%;
-  color: red !important;
-  background-color: #bd1b77;
+  width: 100px;
 }
 
 .searchInput {

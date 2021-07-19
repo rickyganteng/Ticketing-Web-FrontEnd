@@ -2,18 +2,20 @@ import React, { Component } from "react";
 import { Button, Card, Image, Modal } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 // import dummy from "../../assets/img/logo_2.png";
-import styles from "./CardBook.module.css";
+import styles from "./CardBookUpdate.module.css";
 
 class Cards extends Component {
   constructor(props) {
+    // console.log(props);
     super(props);
     this.state = {
-      movieId: this.props.data[0],
-      premiereId: this.props.data[1].premiere_id,
+      movieId: 3,
+      premiereId: 1,
       showTimeId: false,
       selectedClock: "",
       show: false,
     };
+    // console.log(this.props.data);
   }
 
   handleClock = (clock) => {
@@ -58,14 +60,23 @@ class Cards extends Component {
 
   render() {
     const { selectedClock, show } = this.state;
+    // if (this.props.data) {
+    //   console.log(true);
+    // } else {
+    //   console.log(false);
+    // }
     const {
       premiere_name,
+      premiere_id,
       premiere_logo,
       location_city,
       location_addres,
       premiere_price,
-      showTime,
-    } = this.props.data[1];
+      showTime
+    } = this.props.data;
+    const { handleDelete } = this.props;
+
+    // console.log(this.props.data);
     return (
       <>
         <Modal show={show} onHide={this.handleClose}>
@@ -115,21 +126,29 @@ class Cards extends Component {
             <div className="d-flex justify-content-between">
               <p className={styles.price}>Price</p>
               <p className={styles.priceValue}>
-                <span>$</span>
+                <span>$ </span>
                 {premiere_price}
-                <span>/seat</span>
+                <span> /seat</span>
               </p>
             </div>
             <div className="pt-3">
               <Button
                 className={styles.btBook}
                 variant="primary"
+                onClick={() => handleDelete(premiere_id)}
+              >
+                Delete
+              </Button>
+
+              {/* <Button
+                className={styles.btBook}
+                variant="secondary"
                 onClick={() => {
                   this.handleBook();
                 }}
               >
-                Book now
-              </Button>
+                Update
+              </Button> */}
             </div>
           </Card.Body>
           <br />

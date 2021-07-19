@@ -18,6 +18,7 @@ import Home from "./pages/main/Home/Home";
 import MovieDetail from "./pages/main/MovieDetail/MovieDetail";
 import Payment from "./pages/main/Payment/Payment";
 import AdminManageMovie from "./pages/main/AdminManageMovie/AdminManageMovie";
+import AdminManageSchedule from "./pages/main/AdminManageSchedule/AdminManageSchedule";
 import AdminDashboard from "./pages/main/AdminDashboard/AdminDashboard";
 import Order from "./pages/main/Order/Order";
 import Profile from "./pages/main/Profile/Profile";
@@ -72,6 +73,11 @@ class App extends Component {
                 path="/main/admin/manage-movie"
                 exact
                 component={AdminManageMovie}
+              />
+              <PrivateRoute
+                path="/main/admin/manage-schedule"
+                exact
+                component={AdminManageSchedule}
               />
               <PrivateRoute
                 path="/main/admin/dashboard"

@@ -97,6 +97,7 @@ class Home extends Component {
           showTimeDate: res.data.data[0].show_time_date,
           showTimeClock: res.data.data[0].show_time_clock,
         });
+        console.log(res.data.data);
       })
       .catch((err) => {
         return [];
@@ -329,6 +330,7 @@ class Home extends Component {
                     <div className="d-flex flex-row justify-content-between">
                       <p className={styles.semi}>
                         <Moment format="dddd, LL">{showTimeDate}</Moment>
+                        {/* {showTimeDate} */}
                       </p>
                       <p className={styles.semi} style={{ color: "black" }}>
                         {showTimeClock}

@@ -114,9 +114,10 @@ class Dashboard extends Component {
                 >
                   {" "}
                   {data[0].data.length === 0 ? (
-                    <h1 styles={styles.noData}>NO DATA</h1>
+                    <h1 styles={styles.noData}><br />NO DATA N</h1>
                   ) : (
                     <ResponsiveLine
+                      className={styles.text}
                       data={data}
                       margin={{
                         top: 40,
@@ -195,7 +196,7 @@ class Dashboard extends Component {
                   <div className="d-flex flex-column">
                     <Button
                       variant="primary"
-                      className={`${styles.btn} mb-2`}
+                      className={`${styles.btnFilter} mb-2`}
                       onClick={() => {
                         this.handleFilter();
                       }}
@@ -204,7 +205,7 @@ class Dashboard extends Component {
                     </Button>
                     <Button
                       variant="primary"
-                      className={styles.btn}
+                      className={styles.btnReset}
                       onClick={() => {
                         this.handleReset();
                       }}

@@ -5,6 +5,7 @@ import styles from "./Cards.module.css";
 
 class Cards extends Component {
   handleMovieDetail = (id) => {
+    console.log(id);
     this.props.history.push(`/main/movie-detail/${id}`);
   };
 

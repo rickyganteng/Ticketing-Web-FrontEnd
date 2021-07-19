@@ -104,7 +104,7 @@ class NavBar extends Component {
                 <Link className="ml-sm-5" to="/main/admin/manage-movie">
                   <span className={styles.link}>Manage Movie</span>
                 </Link>
-                <Link className="ml-sm-5" to="#">
+                <Link className="ml-sm-5" to="/main/admin/manage-schedule">
                   <span className={styles.link}>Manage Schedule</span>
                 </Link>
               </Nav>

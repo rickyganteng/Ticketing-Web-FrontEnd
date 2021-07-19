@@ -13,3 +13,10 @@ export const getPremiereLocation = () => {
     payload: axiosApiIntances.get("premiere/location"),
   };
 };
+
+export const deletePremiere = (id) => {
+  return {
+    type: "DELETE_PREMIERE",
+    payload: axiosApiIntances.delete(`premiere/main/${id}`),
+  };
+};
