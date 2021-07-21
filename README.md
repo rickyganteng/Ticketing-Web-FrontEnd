@@ -7,7 +7,7 @@
     <a href="https://github.com/rickyganteng/Ticketing-Web-FrontEnd/pulls">Request Feature</a>
   </p>
 
-![Image Banner](src/assets/img/bannerREADME.png)
+![Image Banner](src/assets/img/Screenshot_2.jpg)
 
 ## About The Project
 
