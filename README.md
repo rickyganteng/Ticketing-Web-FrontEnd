@@ -1,6 +1,6 @@
 <h1 align='center'>React JS - Ticketing-Web-FrontEnd</h1>
   <p align="center">
-    <a href="link_deploy">View Demo</a>
+    <a href="https://ticketing-web.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/rickyganteng/Ticketing-Web-FrontEnd/issues">Report Bug</a>
     ·
