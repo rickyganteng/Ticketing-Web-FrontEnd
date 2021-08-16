@@ -316,7 +316,7 @@ class Home extends Component {
                 >
                   <Card.Body className="pb-3 mt-3">
                     <div className={styles.cardImg}>
-                      <Image src={`http://localhost:3001/backend1/api/${premiereImage}`} style={{ width: "120px" }} />
+                      <Image src={`https://ticketingweb.herokuapp.com/backend1/api/${premiereImage}`} style={{ width: "120px" }} />
                       <p className={`${styles.titleSmall} pt-2`}>
                         {premiereName} <span>Cinema</span>
                       </p>

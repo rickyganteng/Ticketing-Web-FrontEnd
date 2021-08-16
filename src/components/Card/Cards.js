@@ -21,7 +21,7 @@ class Cards extends Component {
         <Card style={{ width: "180px" }}>
           <Image
             variant="top"
-            src={`http://localhost:3001/backend1/api/${movie_image}`}
+            src={`https://ticketingweb.herokuapp.com/backend1/api/${movie_image}`}
             style={{ width: "100%", height: "244px" }}
           />
           <Card.Body className="text-center">

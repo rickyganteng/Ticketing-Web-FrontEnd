@@ -114,7 +114,7 @@ class Dashboard extends Component {
                 >
                   {" "}
                   {data[0].data.length === 0 ? (
-                    <h1 styles={styles.noData}><br />NO DATA N</h1>
+                    <h1 styles={styles.noData}><br />Page Chart</h1>
                   ) : (
                     <ResponsiveLine
                       className={styles.text}

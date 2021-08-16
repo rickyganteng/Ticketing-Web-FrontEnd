@@ -191,7 +191,7 @@ class NavBar extends Component {
                   <div className="d-flex flex-md-row flex-column">
                     <div className="mr-sm-4 mt-0 mb-1">
                       <Image
-                        src={`http://localhost:3001/backend1/api/${data.user_profile_image}`}
+                        src={`https://ticketingweb.herokuapp.com/backend1/api/${data.user_profile_image}`}
                         roundedCircle
                         style={{ width: "45px", height: "45px" }}
                       />

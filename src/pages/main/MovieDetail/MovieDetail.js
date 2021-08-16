@@ -120,7 +120,7 @@ class MovieDetail extends Component {
                 {movie_image ? (
                   <Image
                     className={`${styles.heroImg} p-4`}
-                    src={`http://localhost:3001/backend1/api/${movie_image}`}
+                    src={`https://ticketingweb.herokuapp.com/backend1/api/${movie_image}`}
                     fluid
                   />
                 ) : (

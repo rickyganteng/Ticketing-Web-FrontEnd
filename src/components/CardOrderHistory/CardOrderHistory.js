@@ -25,7 +25,7 @@ class Cards extends Component {
               <p className={styles.name}>{movie_name}</p>
             </div>
             <div>
-              <Image src={`http://localhost:3001/backend1/api/${premiere_logo}`} />
+              <Image src={`https://ticketingweb.herokuapp.com/backend1/api/${premiere_logo}`} />
             </div>
           </div>
           <hr />

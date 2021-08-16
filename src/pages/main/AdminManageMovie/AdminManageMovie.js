@@ -264,7 +264,7 @@ class Admin extends Component {
         movieDirectedBy: data.movie_directed_by,
         movieCasts: data.movie_casts,
         movieSynopsis: data.movie_synopsis,
-        movieImage: `http://localhost:3001/backend1/api/${data.movie_image}`,
+        movieImage: `https://ticketingweb.herokuapp.com/backend1/api/${data.movie_image}`,
         image: null,
       },
     });

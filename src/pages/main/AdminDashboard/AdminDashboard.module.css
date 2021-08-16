@@ -6,6 +6,7 @@
 .text {
   color: red;
   background-color: red;
+  font-size: 20px;
 }
 .bgDiv {
   background-color: #fcfdfe;

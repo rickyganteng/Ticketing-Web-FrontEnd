@@ -335,7 +335,7 @@ class AdminSchedule extends Component {
         movieDirectedBy: data.movie_directed_by,
         movieCasts: data.movie_casts,
         movieSynopsis: data.movie_synopsis,
-        movieImage: `http://localhost:3001/backend1/api/${data.movie_image}`,
+        movieImage: `https://ticketingweb.herokuapp.com/backend1/api/${data.movie_image}`,
         image: null,
       },
     });
@@ -415,7 +415,7 @@ class AdminSchedule extends Component {
                 <Col lg={4}>
                   <Image
                     className={`${styles.hero} p-4 mb-4 d-block mx-auto`}
-                    src={this.state.imageMovie ? `http://localhost:3001/backend1/api/${this.state.imageMovie}` : dummy}
+                    src={this.state.imageMovie ? `https://ticketingweb.herokuapp.com/backend1/api/${this.state.imageMovie}` : dummy}
                     fluid
                   />
                 </Col>

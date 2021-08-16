@@ -157,7 +157,7 @@ class Profile extends Component {
                 <p className={styles.info}>INFO</p>
                 <div className="text-center">
                   <Image
-                    src={`http://localhost:3001/backend1/api/${user_profile_image}`}
+                    src={`https://ticketingweb.herokuapp.com/backend1/api/${user_profile_image}`}
                     alt="NO PROFILE"
                     style={{ width: "45%" }}
                     roundedCircle
