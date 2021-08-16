@@ -1,13 +1,13 @@
 <h1 align='center'>React JS - Ticketing-Web-FrontEnd</h1>
   <p align="center">
-    <a href="link_deploy">View Demo</a>
+    <a href="https://ticketing-web.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/rickyganteng/Ticketing-Web-FrontEnd/issues">Report Bug</a>
     ·
     <a href="https://github.com/rickyganteng/Ticketing-Web-FrontEnd/pulls">Request Feature</a>
   </p>
 
-![Image Banner](src/assets/img/bannerREADME.png)
+![Image Banner](src/assets/img/Screenshot_2.jpg)
 
 ## About The Project
 
@@ -22,6 +22,7 @@ an online cinema ticket purchase website that is easy to use for all ages.
 
 1. <a href="https://nodejs.org/en/download/">Node Js</a>
 2. Node_modules `npm install` or `yarn install`
+3. Back End Ticketing-Web API <a href="https://github.com/rickyganteng/Ticketing-web-API"> here </a>
 
 ## Getting Started
 
