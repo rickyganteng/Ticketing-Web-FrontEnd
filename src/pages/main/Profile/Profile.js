@@ -15,6 +15,8 @@ import styles from "./Profile.module.css";
 import { connect } from "react-redux";
 import { updateProfile, getOrderHistory } from "../../../redux/action/user";
 import { logout, change } from "../../../redux/action/auth";
+import dummy from "../../../assets/img/icon-defauult.png";
+
 
 class Profile extends Component {
   constructor(props) {
@@ -156,13 +158,17 @@ class Profile extends Component {
               <div className={`${styles.bgDiv} p-4`}>
                 <p className={styles.info}>INFO</p>
                 <div className="text-center">
-                  <Image
-                    src={`https://ticketingweb.herokuapp.com/backend1/api/${user_profile_image}`}
-                    alt="NO PROFILE"
-                    style={{ width: "45%" }}
-                    roundedCircle
-                    className="mb-3"
-                  />
+                  {user_profile_image ? (
+                    <Image
+                      src={`https://ticketingweb.herokuapp.com/backend1/api/${user_profile_image}`}
+                      alt="NO PROFILE"
+                      style={{ width: "45%" }}
+                      roundedCircle
+                      className="mb-3"
+                    />
+                  ) : (
+                    <img src={dummy} alt="gambar" />
+                  )}
                   <p className={styles.name}>{`${firstName} ${lastName}`}</p>
                   <p className={styles.semi}>Moviegoers</p>
                 </div>

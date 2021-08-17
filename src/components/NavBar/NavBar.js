@@ -9,6 +9,8 @@ import styles from "./NavBar.module.css";
 import { connect } from "react-redux";
 import { logout } from "../../redux/action/auth";
 import { getAllMovie } from "../../redux/action/movie";
+import dummy from "../../assets/img/icon-defauult.png";
+
 
 class NavBar extends Component {
   constructor(props) {
@@ -190,11 +192,15 @@ class NavBar extends Component {
                 ) : (
                   <div className="d-flex flex-md-row flex-column">
                     <div className="mr-sm-4 mt-0 mb-1">
-                      <Image
-                        src={`https://ticketingweb.herokuapp.com/backend1/api/${data.user_profile_image}`}
-                        roundedCircle
-                        style={{ width: "45px", height: "45px" }}
-                      />
+                      {data.user_profile_image ? (
+                        <Image
+                          src={`https://ticketingweb.herokuapp.com/backend1/api/${data.user_profile_image}`}
+                          roundedCircle
+                          style={{ width: "45px", height: "45px" }}
+                        />
+                      ) : (
+                        <img src={dummy} alt="gambar" />
+                      )}
                     </div>
                     <Button
                       className={(styles.link, styles.btNav)}
